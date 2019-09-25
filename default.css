@@ -1,0 +1,339 @@
+﻿/* default  CSS */
+
+
+body {background-color: LightGoldenRodYellow;
+  font-family: "Times New Roman", Times, serif}
+
+h1   {color: rgb(6, 26, 7);
+  font-weight: bold;
+  font-size: 36px;
+  font-family: French Script MT,Freestyle Script,sans-seriff;
+text-align:center}
+
+h2   {color:rgb(56, 48, 34);
+font-family:  Lucida Handwriting,Freestyle Script,sans-seriff;  
+font-weight: bold;
+  font-size: 24px;
+  
+ }
+
+#menu{    /*menu bar specifications;every.html*/
+   width:auto;
+   height:35px;
+   font-size:19px;
+   font-family:Freestyle Script,sans-seriff;
+   font-weight:bold;
+   text-align:center;
+   background-color:#FFC300;
+   border-radius:8px;
+   margin-top: 25px;
+ }
+
+ #menu img{ /*menu bar image ;every.html*/
+  position: absolute;
+  left:120px;
+  top:215px;
+}
+#menu ul{ /*menu bar text  ;every.html*/
+     height:auto;
+     padding: 8px 0px;} /* so that the text doesnt get push up */
+
+#menu li{ /*menu bar text  ;every.html*/
+display:inline;
+padding:20px;}
+
+
+#menu a {/*menu bar text  ;every.html*/
+text-decoration:none;} /* so to remove the default underline for the menu bar hyperlink */
+
+#menu a:link {/* unvisited link for menubar;every.html */
+color: rgb(102, 102, 116);
+}
+
+
+#menu a:visited {/* visited link for menubar;every.html */
+color: black;
+}
+
+#menu a:hover {  /* mouse over link for menubar ;every.html*/
+color: white;
+}
+
+
+
+#quicklink a{ /*  to link with other elements;places.html */
+display: inline;
+color: rgb(56, 48, 34);
+font-size:19px;
+font-family:Freestyle Script,sans-seriff;
+text-decoration:none} /* so to remove the default underline for the menu bar hyperlink */
+
+
+#quicklink2 a{ /*  to link with other places ; Visuals GC.html*/
+display: inline;
+color: rgb(89, 216, 39);
+font-size:19px;
+font-family:Freestyle Script,sans-seriff;
+text-decoration:none
+} /* so to remove the default underline for the menu bar hyperlink */
+
+#sitemap a { 
+color: rgb(6, 26, 7);
+font-family:Freestyle Script,sans-seriff;
+text-decoration:none;
+
+}
+#storyboard img{/*for storyboard ;Visuals.html */
+  position:absolute;
+ top:1900px;
+  left:18%
+  
+  
+}
+#storyboard2 img{/*for storyboard ;Visuals.html */
+  position:relative;
+  top:1600px;
+   left:13%
+}
+#vidhold p,h2{/*for video and it's details ;Visuals.html */
+  position:relative;
+  margin-left:auto; 
+  margin-right:auto;
+  text-align:left;
+   
+}
+#vidhold {/*for video and it's details ;Visuals.html */
+  position:relative;
+  top:1700px;
+  margin-left:auto; 
+  margin-right:auto;
+  text-align:center;
+   
+}
+#ImgMapWrapper img {  /* for imagemap ;Visuals.html */
+padding:1px;
+position: relative;
+left:-5%;
+border:4px solid #021a40;
+background-color:#ff0;
+}
+#ImgMapWrapper  {  /* for imagemap;Visuals.html */
+  text-align:center;
+  margin-left:auto; 
+  margin-right:auto;
+  }
+
+.centeri {    /* a class for elements to be centered*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border: 4px solid black ; /* borders for images */
+}  
+#acenter a{
+  position: relative;
+  left:550px;
+}
+#center2 a{    /* for title;TravelTips.html */
+  position: relative;
+  left:450px;
+  font-family:Freestyle Script,sans-seriff;
+  font-size:29px;
+}  
+
+.righti {    /* for images to be sent to the right */
+  float:right;
+  border:4px solid #021a40;
+}  
+
+
+.container { /*   theme picture on every.html page  */
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.container2 { /*   quiz on home ;index.html */
+  position: relative;
+  text-align: center;
+  color: black;
+    top:30%;
+}
+
+.top-centered {/* Centered text for the  theme picture;every.html */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-centered{ /* for elements to be sent to the bot-center */
+position: absolute;
+bottom: -400px;
+right: 400px;
+}
+
+
+#Lefttext a{color: rgb(102, 102, 116);
+float: left;
+width:100px;
+margin-left: 50px;
+position: absolute;
+font-size:19px;
+font-family:Freestyle Script,sans-seriff;
+text-align:left; 
+bottom: -25px 
+} 
+
+#Leftimg img{ /*send img to left */
+float: left;
+width:150px;
+margin-left: 10px;
+position: relative;
+bottom: -50px 
+} 
+
+.gallery{ /*positioning of the gallery ;Visuals.html*/
+position:absolute;
+margin-left: 100px;
+margin-right: 100px;
+padding: 10px 10px 10px 100px;
+border: 4px solid black ;
+background-color: mintcream;
+}
+.gallery .row { /*adjusting spacing  ;Visuals.html*/
+white-space: nowrap;
+}
+.gallery img {/*adjusting size ;Visuals.html*/
+display: inline-block;
+width: 30%; /*set the width or max-width*/
+height: 40%; /*this makes sure to maintain the aspect ratio*/
+}
+
+.gallery .row :hover img{ /*for grayscale effect on hover */
+filter: grayscale(100%);
+}
+
+
+.img__wrap {/*for gallery images;Visual.html */
+position: relative;
+display: inline;
+}
+
+.img__description_layer {/*for gallery images;Visual.html */
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 30%; /*set the width or max-width*/
+height: 40%;
+background: rgba(36, 62, 206, 0.6);
+color: #fff;
+visibility: hidden;
+opacity: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: opacity .2s, visibility .2s;/* transition effect.  */
+}
+
+.img__wrap:hover .img__description_layer { /*hover effect specs for gallery images;Visual.html */
+visibility: visible;
+opacity: 1;
+}
+
+.img__description { /*for gallery images;Visual.html */
+transition: .2s; /*transition time period */
+transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {/*effects for gallery images;Visual.html */
+transform: translateY(0);
+}
+
+
+.themebutton1:hover {/*Effects for Themebuttons (Sculpture and Tree);every .html*/
+filter:sepia(100%);
+
+}
+.themebutton1 {/*Effects for Themebuttons (Sculpture and Tree);every .html*/
+position: absolute;
+top: 124%;
+left: 14%;
+transform: translate(-50%, -50%);
+}
+
+
+.themebutton2:hover {/*Effects for Themebuttons (Sculpture and Tree);every .html*/
+filter:sepia(100%);
+
+}
+.themebutton2{/*Effects for Themebuttons (Sculpture and Tree);every .html*/
+position: absolute;
+top:118%;
+left: 90%;
+transform: translate(-50%, -50%);
+}
+
+#sitemap a{/*centering text;Sitemap.html*/
+  text-align:center;
+  margin-right:auto;
+  margin-left:auto; 
+}
+
+#space p{
+ text-indent: 10em; 
+}
+#quiz { /*All the below specifications are for the quiz;index.html */
+text-indent: 10px;
+display:none;
+}
+
+.button {
+border:4px solid;
+border-radius:5px;
+width: 40px;
+padding-left:5px;
+padding-right: 5px;
+position: relative;
+float:right;
+background-color: #DCDCDC;
+color: black;
+margin: 0 2px 0 2px;
+}
+
+.button.active {
+background-color: #F8F8FF;
+color: #525252;
+}
+
+button {
+position: relative;
+float:right;
+}
+
+.button a {
+text-decoration: none;
+color: black;
+}
+
+
+ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+#prev {
+display:none;
+}
+
+#start {
+display:none;
+width: 90px;
+}
+
+
+
+

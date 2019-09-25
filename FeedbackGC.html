@@ -1,0 +1,74 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head> 
+<title>GadaboutCoadjutor</title>
+<link id ="stylesheet" rel="stylesheet" type="text/css" title= "yellow" href="default.css" /> <!--both of the links are having the same id due to the implementations of javascript-->
+<link id ="stylesheet2" rel="alternate stylesheet" type="text/css" title="green" href="alternativeg.css">
+<link rel="icon" type="img/png" href="Resources/GClogo4.png"/> <!-- for titlebar logo-->
+</head>
+
+<body>
+    <div id = "fixedmenu">    
+        <div class="container">
+        <img  id ="theme" src="Resources/Backgroundmain2.png" alt="topBackground pic" style="width:100%;">
+                        <div class="top-centered"><h1>Homepage</h1></div> <!--centering the word-->
+                        <div class="themebutton1">
+                         <img src=" Resources/animeegypt2.gif" alt="Egypt" onclick="swapStyleSheet2('default.css','Resources/Backgroundmain2.png','Resources/GClogo2.png') ">
+                        </div>
+                       <div class="themebutton2">
+                         <img  src="Resources/animetree5.gif" alt="Tree" onclick="swapStyleSheet2('alternativeg.css','Resources/Backgroundmain3.png','Resources/GClogo2.2.png')"> 
+                         </div>
+                </div>
+              </div> <!-- for fixedmenu -->
+
+
+
+
+<div id ="menu"><!--menu bar -->
+  <img id ="mini" src="Resources/GClogo2.png" alt="Logo">
+<ul>   
+<li><a href="index.html">Home</a></li>
+<li><a href="PlacesGC.html">Places</a></li>
+<li><a href="TravelTipsGC.html">Travel Tips</a></li>
+<li><a href="CostGC.html">Cost</a></li>
+<li><a href="VisualsGC.html">Visuals</a></li>
+<li><a href="SiteMapGC.html ">SiteMap</a></li>
+<li><a href="AboutUsGC.html">About Us</a></li>
+<li><a href="FeedbackGC.html">Feedback</a></li>
+</ul>
+</div>
+<div id="replyform_b">
+  
+    <h4>Tell me what you think!</h4>
+    <p>Please complete the form below to let me know what you think about my website. If you would like a response, please include your email address.</p>
+    <p>What do you think of my website?</p>
+    <form enctype="text/plain" 
+       action="mailto:U6555407@anu.edu.au">
+ 
+    <textarea name ="text" wrap="soft"
+    maxlength="500"></textarea>
+  
+    <br/>
+    Enter your Email-ID
+    <input type="text" name="some_text"
+       size="50" maxlength="50">
+    <hr>
+      Submit:
+    <input type="submit" value="Send it">
+    or
+    <input type="reset" value="Clear">
+      <hr>
+  </form>
+    
+
+<script  src='helperfile.js'></script>
+<script  src='questions.json'></script>
+<script  src='quiz.js'></script>
+<script src="themechanger.js"></script>
+    </div>
+
+
+
+</body>
+</html>

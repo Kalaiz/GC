@@ -1,0 +1,308 @@
+/* Default CSS */
+
+
+body {background-color: LightGoldenRodYellow;
+      font-family: "Times New Roman", Times, serif}
+
+h1   {color: rgb(6, 26, 7);
+      font-weight: bold;
+      font-size: 36px;
+      font-family: French Script MT,Freestyle Script,sans-seriff;
+    text-align:center}
+
+h2   {color:rgb(83, 156, 75);
+    font-family:  Lucida Handwriting,Freestyle Script,sans-seriff;  
+    font-weight: bold;
+      font-size: 24px
+      
+     }
+
+#menu{    /*menu bar specifications*/
+       width:auto;
+       height:35px;
+       font-size:19px;
+       font-family:Freestyle Script,sans-seriff;
+       font-weight:bold;
+       text-align:center;
+       background-color:#FFC300 ;
+       border-radius:8px;
+       margin-top: 25px;
+      
+     }
+
+#menu ul{
+         height:auto;
+         padding: 8px0px} /* so that the text doesnt get push up */
+
+#menu li{
+display:inline;
+padding:25px}
+
+
+#menu a {
+text-decoration:none} /* so to remove the default underline for the menu bar hyperlink */
+
+  /* unvisited link for menubar */
+#menu a:link {
+    color: rgb(102, 102, 116);
+}
+
+/* visited link for menubar */
+#menu a:visited {
+    color: black;
+}
+
+/* mouse over link for menubar */
+#menu a:hover {
+    color: white;
+}
+
+#quicklink {
+  position: relative;
+}
+
+/* In Places GC.html to link with other places */
+#quicklink a{
+display: inline;
+color:rgb(187, 140, 53);
+font-size:19px;
+font-family:Freestyle Script,sans-seriff;
+text-decoration:none} /* so to remove the default underline for the menu bar hyperlink */
+
+/* In Visuals GC.html to link with other places */
+#quicklink2 a{
+  display: inline;
+  color:rgb(187, 140, 53);
+  font-size:19px;
+  font-family:Freestyle Script,sans-seriff;
+  text-decoration:none
+ } /* so to remove the default underline for the menu bar hyperlink */
+
+#sitemap a {
+color: rgb(6, 26, 7);
+font-family:Freestyle Script,sans-seriff;
+text-decoration:none
+
+}
+
+#ImgMapWrapper img {
+    padding:1px;
+    position: relative;
+    left:-5%;
+    border:4px solid #021a40;
+    background-color:#ff0;
+ }
+
+.center {    /* a class for elements to be centered*/
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+  }  
+
+.container { /*  theme picture on every.html page   */
+      position: relative;
+      text-align: center;
+      color: black;
+      
+  }
+
+  .container2 { /*  quiz on home  */
+    position: relative;
+    text-align: center;
+    color: black;
+    float:center;
+    top:30%;
+    
+}
+  /* Centered text for the  theme picture */
+.top-centered {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+.bottom-centered{
+   position: absolute;
+   bottom: -400px;
+   right: 400px;
+           
+}
+
+.logo-img{ /*for the small logo on the menu bar*/
+      float: left;
+      margin: 0px 15px 15px 0px;
+  }
+
+ #Lefttext a{color: rgb(102, 102, 116);
+    float: left;
+    width:100px;
+    margin-left: 50px;
+    position: absolute;
+    font-size:19px;
+    font-family:Freestyle Script,sans-seriff;
+    text-align:left; 
+    bottom: -25px
+     
+ } 
+
+ #Leftimg img{ /*Not used yet */
+    float: left;
+    width:150px;
+    margin-left: 10px;
+    position: relative;
+    bottom: -50px
+     
+ } 
+
+
+
+ .gallery{ /*positioning of the galley */
+   position:absolute;
+   margin-left: 100px;
+   margin-right: 100px;
+   padding: 10px 10px 10px 100px;
+   border: 4px solid black ;
+   background-color: mintcream;
+   
+ }
+ .gallery .row { /*adjusting spacing */
+  white-space: nowrap;
+  
+}
+.gallery img {
+  display: inline-block;
+    width: 30%; /*set the width or max-width*/
+    height: 40%; /*this makes sure to maintain the aspect ratio*/
+
+}
+
+.gallery .row :hover img{ /*for grayscale effect on hover */
+  filter: grayscale(100%);
+}
+
+
+.img__wrap {
+  position: relative;
+  display: inline;
+ 
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 30%; /*set the width or max-width*/
+  height: 40%;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description_layer { /*hover effect specs*/
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  transition: .2s; /*transition time period */
+  transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
+
+
+.themebutton1:hover {
+  filter:sepia(100%);
+
+}
+.themebutton1 {
+  position: absolute;
+  top: 124%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+}
+
+
+.themebutton2:hover {
+  filter:sepia(100%);
+
+}
+.themebutton2{
+  position: absolute;
+  top:118%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+#quiz {
+  text-indent: 10px;
+  display:none;
+}
+
+.button {
+  border:4px solid;
+  border-radius:5px;
+  width: 40px;
+  padding-left:5px;
+  padding-right: 5px;
+  position: relative;
+  float:right;
+  background-color: #DCDCDC;
+  color: black;
+  margin: 0 2px 0 2px;
+}
+
+.button.active {
+  background-color: #F8F8FF;
+  color: #525252;
+}
+
+button {
+  position: relative;
+  float:right;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#prev {
+  display:none;
+}
+
+#start {
+  display:none;
+  width: 90px;
+}
+
+
+
+#mini{
+  position: absolute;
+  top:38%;
+  left: 7%;
+  transform: translate(-50%, -50%)
+
+}
